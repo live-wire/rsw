@@ -42,35 +42,39 @@ class Row extends React.Component{
         &nbsp;&nbsp;&nbsp;
         &nbsp;&nbsp;&nbsp;
           <TextField
-            style={{width:"10%",marginBottom:10}}
+            style={{width:"25%",marginBottom:10}}
             type="number"
             value={this.props.row.l}
             floatingLabelText="length" 
             onChange={(e)=>{this._updateRowValue('l',e);}}
             />&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;
           <TextField
-            style={{width:"10%"}}
+            style={{width:"25%",marginBottom:10}}
             type="number"
             value={this.props.row.w}
             floatingLabelText="width" 
             onChange={(e)=>{this._updateRowValue('w',e);}}
             />&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;
           <TextField
-            style={{width:"10%"}}
+            style={{width:"25%",marginBottom:10}}
             type="number"
             value={this.props.row.h}
             floatingLabelText="height" 
             onChange={(e)=>{this._updateRowValue('h',e);}}
-            />&nbsp;&nbsp;&nbsp;
+            /><br/> &nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;
           <TextField
-            style={{width:"10%"}}
+            style={{width:"25%",marginBottom:10}}
             type="number"
             value={this.props.row.gsm}
             floatingLabelText="GSM" 
             onChange={(e)=>{this._updateRowValue('gsm',e);}}
           />&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp; 
           <TextField
-            style={{width:"10%"}}
+            style={{width:"25%",marginBottom:10}}
             type="number"
             value={this.props.row.ply}
             floatingLabelText="No. of Ply" 

@@ -24920,7 +24920,7 @@ var Row = function (_React$Component) {
             null,
             '\xA0\xA0\xA0 \xA0\xA0\xA0',
             _react2.default.createElement(_TextField2.default, {
-              style: { width: "10%", marginBottom: 10 },
+              style: { width: "25%", marginBottom: 10 },
               type: 'number',
               value: this.props.row.l,
               floatingLabelText: 'length',
@@ -24928,9 +24928,9 @@ var Row = function (_React$Component) {
                 _this2._updateRowValue('l', e);
               }
             }),
-            '\xA0\xA0\xA0',
+            '\xA0\xA0\xA0 \xA0\xA0\xA0',
             _react2.default.createElement(_TextField2.default, {
-              style: { width: "10%" },
+              style: { width: "25%", marginBottom: 10 },
               type: 'number',
               value: this.props.row.w,
               floatingLabelText: 'width',
@@ -24938,9 +24938,9 @@ var Row = function (_React$Component) {
                 _this2._updateRowValue('w', e);
               }
             }),
-            '\xA0\xA0\xA0',
+            '\xA0\xA0\xA0 \xA0\xA0\xA0',
             _react2.default.createElement(_TextField2.default, {
-              style: { width: "10%" },
+              style: { width: "25%", marginBottom: 10 },
               type: 'number',
               value: this.props.row.h,
               floatingLabelText: 'height',
@@ -24948,9 +24948,10 @@ var Row = function (_React$Component) {
                 _this2._updateRowValue('h', e);
               }
             }),
-            '\xA0\xA0\xA0',
+            _react2.default.createElement('br', null),
+            ' \xA0\xA0\xA0 \xA0\xA0\xA0',
             _react2.default.createElement(_TextField2.default, {
-              style: { width: "10%" },
+              style: { width: "25%", marginBottom: 10 },
               type: 'number',
               value: this.props.row.gsm,
               floatingLabelText: 'GSM',
@@ -24958,9 +24959,9 @@ var Row = function (_React$Component) {
                 _this2._updateRowValue('gsm', e);
               }
             }),
-            '\xA0\xA0\xA0',
+            '\xA0\xA0\xA0 \xA0\xA0\xA0',
             _react2.default.createElement(_TextField2.default, {
-              style: { width: "10%" },
+              style: { width: "25%", marginBottom: 10 },
               type: 'number',
               value: this.props.row.ply,
               floatingLabelText: 'No. of Ply',
