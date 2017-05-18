@@ -24916,11 +24916,17 @@ var Row = function (_React$Component) {
           _Paper2.default,
           _defineProperty({ style: style, zDepth: 1, rounded: false }, 'style', { display: "inline-block", marginTop: "10px" }),
           _react2.default.createElement(
+            _FloatingActionButton2.default,
+            { style: { marginRight: "20px", "top": "60px", position: "relative", "float": "right" }, mini: true, secondary: true, onClick: function onClick() {
+                _this2.props.removeRow(_this2.props.index);_this2.props.performCalculations();
+              } },
+            _react2.default.createElement(_delete2.default, null)
+          ),
+          _react2.default.createElement(
             'div',
             null,
-            '\xA0\xA0\xA0 \xA0\xA0\xA0',
             _react2.default.createElement(_TextField2.default, {
-              style: { width: "25%", marginBottom: 10 },
+              style: { width: "20%", marginBottom: 10, marginLeft: 10 },
               type: 'number',
               value: this.props.row.l,
               floatingLabelText: 'length',
@@ -24928,9 +24934,8 @@ var Row = function (_React$Component) {
                 _this2._updateRowValue('l', e);
               }
             }),
-            '\xA0\xA0\xA0 \xA0\xA0\xA0',
             _react2.default.createElement(_TextField2.default, {
-              style: { width: "25%", marginBottom: 10 },
+              style: { width: "20%", marginBottom: 10, marginLeft: 10 },
               type: 'number',
               value: this.props.row.w,
               floatingLabelText: 'width',
@@ -24938,9 +24943,8 @@ var Row = function (_React$Component) {
                 _this2._updateRowValue('w', e);
               }
             }),
-            '\xA0\xA0\xA0 \xA0\xA0\xA0',
             _react2.default.createElement(_TextField2.default, {
-              style: { width: "25%", marginBottom: 10 },
+              style: { width: "20%", marginBottom: 10, marginLeft: 10 },
               type: 'number',
               value: this.props.row.h,
               floatingLabelText: 'height',
@@ -24949,9 +24953,8 @@ var Row = function (_React$Component) {
               }
             }),
             _react2.default.createElement('br', null),
-            ' \xA0\xA0\xA0 \xA0\xA0\xA0',
             _react2.default.createElement(_TextField2.default, {
-              style: { width: "25%", marginBottom: 10 },
+              style: { width: "20%", marginBottom: 10, marginLeft: 10 },
               type: 'number',
               value: this.props.row.gsm,
               floatingLabelText: 'GSM',
@@ -24959,25 +24962,16 @@ var Row = function (_React$Component) {
                 _this2._updateRowValue('gsm', e);
               }
             }),
-            '\xA0\xA0\xA0 \xA0\xA0\xA0',
             _react2.default.createElement(_TextField2.default, {
-              style: { width: "25%", marginBottom: 10 },
+              style: { width: "20%", marginBottom: 10, marginLeft: 10 },
               type: 'number',
               value: this.props.row.ply,
-              floatingLabelText: 'No. of Ply',
+              floatingLabelText: 'Ply(s)',
               onChange: function onChange(e) {
                 _this2._updateRowValue('ply', e);
               }
             }),
-            this.props.row.weight > 0 && _react2.default.createElement(_RaisedButton2.default, { label: "Weight: " + this.props.row.weight.toFixed(2), disabled: true, style: { padding: 20 } }),
-            '\xA0\xA0\xA0\xA0\xA0\xA0',
-            _react2.default.createElement(
-              _FloatingActionButton2.default,
-              { mini: true, secondary: true, onClick: function onClick() {
-                  _this2.props.removeRow(_this2.props.index);_this2.props.performCalculations();
-                } },
-              _react2.default.createElement(_delete2.default, null)
-            )
+            this.props.row.weight > 0 && _react2.default.createElement(_RaisedButton2.default, { label: "Weight: " + this.props.row.weight.toFixed(2), disabled: true, style: { padding: 20 } })
           )
         )
       );
@@ -25151,7 +25145,7 @@ var QuantityPrice = function QuantityPrice(_ref) {
     }),
     _react2.default.createElement(
       'div',
-      { style: { position: "fixed", top: "0px", right: "0px", color: "#fff", padding: "10px", background: "#5bc0de" } },
+      { style: { position: "absolute", top: "0px", right: "0px", color: "#fff", padding: "10px", background: "#5bc0de" } },
       state.totalWeight > 0 && state.rows.length > 0 && _react2.default.createElement(_RaisedButton2.default, { label: "Weight: " + state.totalWeight.toFixed(2), disabled: true, style: style }),
       _react2.default.createElement('br', null),
       state.price != undefined && state.totalPrice > 0 && state.rows.length > 0 && _react2.default.createElement(_RaisedButton2.default, { label: "Price: " + state.totalPrice.toFixed(2), disabled: true, style: style })

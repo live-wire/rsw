@@ -25,7 +25,7 @@ let QuantityPrice = ({dispatch,state})=>{
       floatingLabelText="Price per weight" 
 	  onChange={(e)=>{dispatch(updateQuantityPrice({quantity:state.quantity,price:parseFloat(e.target.value)}));dispatch(performCalculations());}}
       />
-      <div style={{position:"fixed", top:"0px", right:"0px", color:"#fff", padding:"10px",background:"#5bc0de"}}>
+      <div style={{position:"absolute", top:"0px", right:"0px", color:"#fff", padding:"10px",background:"#5bc0de"}}>
 		{state.totalWeight>0 && state.rows.length>0 &&<RaisedButton label={"Weight: "+state.totalWeight.toFixed(2)} disabled={true} style={style} />}
    		<br/>
    		{state.price!=undefined && state.totalPrice>0 && state.rows.length>0 && <RaisedButton label={"Price: "+state.totalPrice.toFixed(2)} disabled={true} style={style} />}
